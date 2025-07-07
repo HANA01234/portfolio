@@ -1,4 +1,4 @@
-import {Briefcase, Code ,User} from "lucide-react";
+import {Briefcase, Code ,User, Download} from "lucide-react";
 export const AboutSection = () => {
     return (
         <section id="about" className="py-24 px-4 relative">
@@ -29,10 +29,14 @@ export const AboutSection = () => {
                                 Get In Touch
                             </a>
 
-                            <a href="Hana CV.docx" className="cosmic-bpx-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300utton">
-                            
-                                Download CV
-                            </a>
+                            <a
+                href="/Hana CV.pdf"
+                download="HanaCV.pdf"
+                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300 flex items-center gap-2"
+                >
+                <Download className="w-4 h-4" />
+                Download CV
+                </a>
 
                         </div>
                     </div>
